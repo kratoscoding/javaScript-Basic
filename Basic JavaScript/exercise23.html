@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function method_draw23(n) {
+            let str = '';
+            for (let i = n; i >= 1; i--) {
+                for (let a = 1; a <= n; a++) {
+                    let symbol = (a < i) ? '-' : '*' ;
+                    str = str + symbol;
+                }
+                for (let a = (n - 1); a >= 1; a--) {
+                    let symbol = (a < i) ? '-' : '*' ;
+                    str = str + symbol;
+                }
+                str = str + '\n';
+            }
+            for (let i = 2; i <= n; i++) {
+                for (let a = 1; a <= n; a++) {
+                    let symbol = (a < i) ? '-' : '*' ;
+                    str = str + symbol;
+                }
+                for (let a = (n - 1); a >= 1; a--) {
+                    let symbol = (a < i) ? '-' : '*' ;
+                    str = str + symbol;
+                }
+                str = str + '\n';
+            }
+            return str;
+        }
+        console.log(method_draw23(2));
+        console.log(method_draw23(3));
+        console.log(method_draw23(4));
+    </script>
+</body>
+</html>

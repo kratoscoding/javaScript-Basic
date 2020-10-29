@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let n = prompt(`Enter number`);
+        function reverse(num) {
+            let n = num.toString().split('').reverse().join('');
+            console.log(parseInt(n) * Math.sign(num));
+        }
+        reverse(n)
+        
+    </script>
+</body>
+</html>

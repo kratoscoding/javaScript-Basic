@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let min = Infinity;
+        while(true) {
+            let num = prompt(`Input number : `);
+            if (num == `stop`) {
+                break;
+            } else {
+                num = Number(num);
+                if (num <= min) {
+                    min = num;
+                }
+            }
+        }
+        // console.log(min)
+        alert(min)
+        
+    </script>
+</body>
+</html>

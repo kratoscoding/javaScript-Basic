@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function method_draw22(n) {
+            let str = '';
+            let count = 1;
+            for (let i = n; i >= 1; i--) {
+                for (let a = 1; a <= n; a++) {
+                    let symbol = (a < i) ? '-' : Number(count) ;
+                    str = str + symbol;
+                    if (typeof symbol === 'number') {
+                        count++;
+                    }
+                }
+                for (let a = (n - 1); a >= 1; a--) {
+                    let symbol = (a < i) ? '-' : Number(count);
+                    str = str + symbol;
+                    if (typeof symbol === 'number') {
+                        count++;
+                    }
+                }
+                str = str + '\n';
+            }
+            for (let i = 2; i <= n; i++) {
+                for (let a = 1; a <= n; a++) {
+                    let symbol = (a < i) ? '-' : Number(count) ;
+                    str = str + symbol;
+                    if (typeof symbol === 'number') {
+                        count++;
+                    }
+                }
+                for (let a = (n - 1); a >= 1; a--) {
+                    let symbol = (a < i) ? '-' : Number(count) ;
+                    str = str + symbol;
+                    if (typeof symbol === 'number') {
+                        count++;
+                    }
+                }
+                str = str + '\n';
+            }
+            return str;
+        }
+        console.log(method_draw22(2));
+        console.log(method_draw22(3));
+        console.log(method_draw22(4));
+    </script>
+</body>
+</html>

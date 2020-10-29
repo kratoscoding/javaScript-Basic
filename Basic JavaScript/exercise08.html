@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function method_draw8(n) {
+            let str = '';
+            for (let i = 0; i < n; i++) {
+                for (let a = 0; a < n; a += n) {
+                    str = str + (i * 2);
+                }
+                str = str + '\n';
+            }
+            return str;
+        }
+        console.log(method_draw8(2));
+        console.log(method_draw8(3));
+        console.log(method_draw8(4));
+    </script>
+</body>
+</html>

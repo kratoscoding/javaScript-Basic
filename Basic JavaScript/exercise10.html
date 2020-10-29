@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function method_draw10(n) {
+            let str = '';
+            for (let i = 0; i < n; i++) {
+                for (let a = 1; a <= n; a++) {
+                    str = str + (a + (a * i));
+                }
+                str = str + '\n';
+            }
+            return str;
+        }
+        console.log(method_draw10(2));
+        console.log(method_draw10(3));
+        console.log(method_draw10(4));
+    </script>
+</body>
+</html>
